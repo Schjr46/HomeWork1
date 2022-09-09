@@ -37,10 +37,10 @@ namespace Mang_1_chieu
             int right = high - 1;
             while (true)
             {
-                while (left <= right && a[left] < pivot) left++;    //tim pt be hon pivot
-                while (right >= left && a[right] > pivot) right--;  //tim pt lon hon pivot
+                while (left <= right && a[left] < pivot) left++;    //tim pt lon hon pivot
+                while (right >= left && a[right] > pivot) right--;  //tim pt be hon pivot
                 if (left >= right) break;
-                swap(ref a[left], ref a[right]);
+                swap(ref a[left], ref a[right]);    //tien hanh doi cho khi da thoa dk
                 left++;
                 right--;
             }
@@ -100,7 +100,7 @@ namespace Mang_1_chieu
                 left--;
             }
 
-            // dem ac pt ben phai index
+            // dem cac pt ben phai index
             int right = ind + 1;
             while (right < n &&
                    a[right] == x)
