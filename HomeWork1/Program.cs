@@ -60,8 +60,7 @@ namespace Mang_1_chieu
                 quickSort(a, pi + 1, high);
             }
         }
-        // 0 < 5 && 9 < 4
-        // 4>0 && 6 >4
+        // 
         // 
         // 
         // 
